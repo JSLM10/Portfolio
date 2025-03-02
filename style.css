@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+body {
+  background-color: #191c32;
+  color: #fff;
+  line-height: 1.6;
+  padding-top: 80px;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #191c32;
+  color: #fff;
+  padding-top: 80px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 2em;
+  background-color: #191c32;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 60px;
+}
+
+.brand h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.brand span {
+  color: red;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin-left: 1em;
+}
+
+.menu a {
+  color: red;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  transition: background 0.3s ease;
+  font-weight: 700;
+}
+
+.menu a:hover {
+  background-color: #191c32;
+  color: white;
+  border-radius: 5px;
+}
+
+.navbar-responsive {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-responsive i {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+/* Main Section */
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 90vh;
+  background-color: #191c32;
+  color: #fff;
+  padding: 0 2em;
+  margin-top: 60px;
+}
+
+.main-content {
+  background-color: #2b3058;
+  padding: 2em;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+}
+
+.main h1 span {
+  color: red;
+}
+
+.main h2 {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+  font-weight: 100;
+  color: red;
+}
+
+.image-container {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-frame {
+  border: 5px solid red;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.image-frame img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Portfolio Section */
+.portfolio {
+  padding: 2em;
+  text-align: center;
+}
+
+.portfolio-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: auto;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 3px solid red;
+  margin: 1em;
+  flex-grow: 1;
+}
+
+.portfolio-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background-color: #3a3f6b;
+}
+
+.portfolio h2 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  font-weight: 700;
+  color: red;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+.portfolio-info {
+  text-align: center;
+  width: 100%;
+}
+
+.portfolio-box {
+  background-color: #2b3058;
+  padding: 1em;
+  border-radius: 10px;
+  width: auto;
+  max-width: 300px;
+}
+
+.portfolio-box h4 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+  color: red;
+}
+
+.portfolio-box p {
+  font-size: 1em;
+  font-weight: 100;
+  margin-bottom: 1em;
+}
+.portfolio-box video {
+  width: 100%; 
+  border-radius: 10px; 
+}
+
+/* Sobre Mi Section */
+.sobremi {
+  padding: 2em;
+  text-align: center;
+}
+
+.sobremi h2 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  font-weight: 700;
+  color: red;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #333;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #333;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #333;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #333;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #333;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #333 transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: #333;
+  position: relative;
+  border-radius: 6px;
+  color: white;
+}
+
+.content h2 {
+  font-weight: 700;
+}
+
+.content p {
+  font-weight: 100;
+}
+
+.content img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Contact Section */
+.contacto {
+  padding: 2em;
+  text-align: center;
+}
+
+.contacto h2 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  font-weight: 700;
+  color: red;
+}
+
+.contacto form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contacto .input-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.contacto input,
+.contacto textarea {
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  margin-bottom: 1em;
+  font-weight: 100;
+}
+
+.contacto input::placeholder,
+.contacto textarea::placeholder {
+  color: red;
+  opacity: 1;
+}
+
+.contacto textarea {
+  height: 150px;
+}
+
+.contacto .btn {
+  padding: 10px 20px;
+  background-color: red;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+  font-weight: 700;
+}
+
+.contacto .btn:hover {
+  background-color: #fff;
+  color: #191c32;
+}
+
+/* Footer */
+.footer {
+  padding: 2em;
+  text-align: center;
+  background-color: red;
+}
+
+.footer .social {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.footer .social a {
+  color: #fff;
+  font-size: 1.5em;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.footer .social a:hover {
+  color: #191c32;
+}
+
+.footer .copyright {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 100;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  /* Tablets */
+  .main {
+    flex-direction: column; /* Cambia a columna para centrar el contenido */
+    text-align: center; /* Centra el texto */
+  }
+
+  .main h1 {
+    text-align: center; /* Centra el texto en tablets */
+  }
+
+  .main-content {
+    margin-left: 0; /* Elimina el margen izquierdo */
+    margin-right: 0; /* Elimina el margen derecho */
+  }
+
+  .image-container {
+    width: 100%; /* Ajusta el ancho de la imagen */
+    margin-top: 2em; /* Espacio entre el texto y la imagen */
+  }
+
+
+  .image-container {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
+  .image-frame {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .portfolio-box {
+    width: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Tablets y móviles */
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #191c32;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 1em;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .navbar-responsive {
+    display: block;
+  }
+
+  .portfolio-box {
+    width: 100%;
+  }
+
+  .timeline::after {
+    left: 20px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .container::after {
+    left: 15px;
+  }
+
+  .left,
+  .right {
+    left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Móviles */
+  .main h1 {
+    font-size: 1.8em;
+  }
+
+  .main h2 {
+    font-size: 1em;
+  }
+
+  .portfolio h2,
+  .sobremi h2,
+  .contacto h2 {
+    font-size: 2em;
+  }
+
+  .content img {
+    height: 150px;
+  }
+}

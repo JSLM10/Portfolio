@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar">
+              <div class="brand">
+                <h1>J<span>P</span></h1>
+              </div>
+              <ul class="menu">
+                <li><a href="#" onclick="seleccionar(); mostrarOcultarMenu()">INICIO</a></li>
+                <li><a href="#sobremi" onclick="seleccionar(); mostrarOcultarMenu()">SOBRE MI</a></li>
+                <li><a href="#portfolio" onclick="seleccionar(); mostrarOcultarMenu()">PORTAFOLIO</a></li>
+                <li><a href="#contacto" onclick="seleccionar(); mostrarOcultarMenu()">CONTACTO</a></li>
+              </ul>
+              <div class="navbar-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+            </nav>
+          </header>
+
+        <main class="main">
+            <div class="image-container">
+              <div class="image-frame">
+                <img src="./img/Inicio.jpeg" alt="Imagen de perfil">
+              </div>
+            </div>
+            <div class="main-content">
+              <div class="content">
+                <h1 >¡Hola soy Juan Pablo Muñoz Corchos!</h1>
+                <h2 >Desarrollador Web</h2>
+                <p >Soy un estudiante de Ingeniería de Sistemas de la Universidad de EIA proveniente de Barranquilla al cual apasiona la programación y el desarrollo web, actualmente me encuentro en la búsqueda de nuevas oportunidades para seguir creciendo en este mundo en el que comencé gracias a los proyectos en el colegio.</p>
+              
+              </div>
+            </div>
+          </main>
+       
+        <section class="sobremi" id="sobremi">
+            <h2 class="heading">MIS <span>PASATIEMPOS</span></h2>
+            <div class="timeline">
+                
+                <div class="container left">
+                    <div class="content">
+                        <div class="tag">
+                            <h2>Enseñar</h2>
+                        </div>
+                        <div class="decs">
+                            <img src="./img/estudiar.jpeg" alt="Estudiar" style="width:100%; border-radius: 6px;">
+                            <p>Enseñar es algo que llevo haciendo desde que estaba en el colegio, usaba mis tiempos libres para ayudar a mis compañeros y se volvió una costumbre que con el tiempo me ayudaba también a encontrar diferentes formas de comprender las cosas  </p>
+                        </div>
+                    </div>
+                </div>
+        
+                
+                <div class="container right">
+                    <div class="content">
+                        <div class="tag">
+                            <h2>Escuchar música</h2>
+                        </div>
+                        <div class="decs">
+                            <img src="./img/media_15cd5d2510ca0ba505f075118a853bdea496c55d2.png" alt="Baloncesto" style="width:100%; border-radius: 6px;">
+                            <p>En mi vida la música es algo que siempre ha estado presente,sea cantando o simplemente escuchándola, para limpiar platos, cocinar, ir al gimnasio, escucho música  </p>
+                        </div>
+                    </div>
+                </div>
+        
+               
+                <div class="container left">
+                    <div class="content">
+                        <div class="tag">
+                            <h2>Baloncesto</h2>
+                        </div>
+                        <div class="decs">
+                            <img src="./img/baloncesto.jpeg" alt="Jugar Videojuegos" style="width:100%; border-radius: 6px;">
+                            <p>A los 16 años comencé a jugar baloncesto con un pequeño grupo de amigos y desde ahí se ha vuelto el deporte que más me apasiona </p>
+                        </div>
+                    </div>
+                </div>
+        
+                
+                <div class="container right">
+                    <div class="content">
+                        <div class="tag">
+                            <h2>Gimnasio</h2>
+                        </div>
+                        <div class="decs">
+                            <img src="./img/Pesas.avif" alt="Salir con amigos" style="width:100%; border-radius: 6px;">
+                            <p>El gimnasio se volvió un espacio para despejar mi mente y desarrollar mi cuerpo, lo que ha hecho que lo sea ya haga parte de mi rutina diaria.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                
+                <div class="container left">
+                    <div class="content">
+                        <div class="tag">
+                            <h2>Salir con amigos</h2>
+                        </div>
+                        <div class="decs">
+                            <img src="./img/WhatsApp Image 2025-02-18 at 2.56.49 PM.jpeg" alt="Escuchar Música" style="width:100%; border-radius: 6px;">
+                            <p>Salir con mis amigos es algo que me hace olvidar todos los problemas que en ese momento estén pasando por mi mente, además de reír y reflexionar muchas cosas</p>
+                        </div>
+                    </div>
+                </div>
+        
+               
+                <div class="container right">
+                    <div class="content">
+                        <div class="tag">
+                            <h2>Ver Películas</h2>
+                        </div>
+                        <div class="decs">
+                            <img src="./img/pelicula.avif" alt="Ver Películas" style="width:100%; border-radius: 6px;">
+                            <p>Las películas que usualmente veo me permiten tener una inspiración para hacer muchas cosas que en ocasiones me siento desmotivado de hacer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+ 
+        <section class="portfolio" id="portfolio">
+            <h2 class="heading">PROYECTOS</h2>
+            <div class="portfolio-container">
+                <a href="https://github.com/DanielRivera03/CarritoComprasPayPal-PasarelaPago" target="_blank" class="portfolio-link">
+                    <div class="portfolio-box">
+                        <div class="portfolio-info">
+                            <h4>Página de compras</h4>
+                            <h5>Tecnologías usadas: C#, ASP.NET, MVC, ADO.NET, SQL Server, AJAX, jQuery</h5>
+                            <p>Este proyecto es una tienda en línea desarrollada con el framework ASP.NET y el patrón de diseño MVC. <br> Permite a los usuarios agregar productos a un carrito de compras y luego realizar pagos a través de PayPal, en un futuro se espera poder vincularlas con otras aplicaciones bancarias que permitan el pago.</p>
+                        </div>
+                        
+                        <img src="./img/Tienda.png" alt="Ver Películas" style="width:100%; border-radius: 6px;">
+                    </div>
+                </a>
+                <a href="https://github.com/marnium/Library.git" target="_blank" class="portfolio-link">
+                    <div class="portfolio-box">
+                        <div class="portfolio-info">
+                            <h4>Gestor de Biblioteca</h4>
+                            <h5>Tecnologías usadas: Java,NetBeans, MySQL, iTextPDF</h5>
+
+                            <p>Es un sistema de gestión de bibliotecas que permite a los bibliotecarios realizar las tareas como: <br>Agregar, eliminar y actualizar los libros
+                               <br> Registrar, modificar y eliminar datos de usuarios; 
+                                <br>Registrar, controlar fechas y generar informes de los mismos en PDF</p>
+                        </div>
+                        
+                        <img src="./img/Biblio.png" alt="Ver Películas" style="width:100%; border-radius: 6px;">
+                    </div>
+                </a>
+                <a href="https://github.com/paledot01/Sistema_Ventas_JavaSE_MySQL.git" target="_blank" class="portfolio-link">
+                    <div class="portfolio-box">
+                        <div class="portfolio-info">
+                            <h4>Gestor de calzado</h4>
+                            <h5>Tecnologías usadas: Java,  MySQL, Corel Draw, Jaspersoft</h5>
+                            <p>El Sistema de Ventas de Calzados está desarrollado en Java SE 8 con MySQL. Gestiona empleados, productos y ventas, generando reportes en texto, Excel y PDF. Usa JasperSoft Studio para comprobantes y gráficos en Graphics2D. Incorpora una GUI interactiva con animaciones y filtrado avanzado.</p>
+                        </div>
+                        <img src="./img/Extra_GIF_Main.gif" alt="Ver Películas" style="width:100%; border-radius: 6px;">
+                       
+                    </div>
+                </a>
+            </div>
+        </section>
+        
+        <section class="contacto" id="contacto">
+            <h2 class="heading">Contáctame</h2>
+            <form action="https://formspree.io/f/xyzkqalw" method="POST">
+                <div class="input-box">
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="tel" name="telefono" placeholder="Número de Teléfono" required>
+                    <input type="text" name="asunto" placeholder="Asunto">
+                </div>
+                <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                <input type="submit" value="Enviar Mensaje" class="btn">
+            </form>
+        </section>
+
+    
+        <footer class="footer">
+            <div class="social">
+                <a href="https://www.linkedin.com/in/juan-pablo-mu%C3%B1oz-corchos-8720bb304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/JSLM10" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:juanpmunozcorchos28@hotmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.instagram.com/jp.munoz.c?igsh=YnVrcHQ5Y3o5ZGNs&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="copyright">
+                <span>&copy; Juan Muñoz | Todos los derechos reservados</span>
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
