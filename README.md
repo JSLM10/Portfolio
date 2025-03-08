@@ -1,3 +1,3 @@
 # Portfolio
 Portafolio trabajo ingeniería web
-Para que pueda acceder al portafolio, simplemente ejecute este código en visual, añadiendo una carpeta img y dentro de esta las imagenes , ya que no me permitió poner como carpeta, y otra carpeta styles para poner dentro el css
+Para que pueda acceder al portafolio, simplemente ejecute este código en visual, solo tiene problemas en algunas tablets y dispositivos samsung a los cuales no funciona como debería la parte de los proyectos.
